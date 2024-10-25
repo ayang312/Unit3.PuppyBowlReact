@@ -39,7 +39,7 @@ export default function SinglePlayer() {
     // Send a DELETE request to API to remove the player
     try {
       const result = await fetch(
-        `https:fsa-puppy-bowl.herokuapp.com/api/2407-FTB-ET-WEB-PT/players/${id}`,
+        `https://fsa-puppy-bowl.herokuapp.com/api/2407-FTB-ET-WEB-PT/players/${id}`,
         { method: "DELETE" }
       );
 

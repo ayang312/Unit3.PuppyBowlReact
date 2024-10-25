@@ -2,7 +2,7 @@
 export async function fetchAllPlayers() {
 
   const cohortName = "2407-FTB-ET-WEB-PT";
-  const baseUrl = `https:fsa-puppy-bowl.herokuapp.com/api/${cohortName}/players`;
+  const baseUrl = `https://fsa-puppy-bowl.herokuapp.com/api/${cohortName}/players`;
 
   try {
     const response = await fetch(baseUrl);
