@@ -12,7 +12,7 @@ export default function NewPlayerForm() {
     try {
       // fetch API for players to create new player
       const response = await fetch(
-        "https:fsa-puppy-bowl.herokuapp.com/api/2407-FTB-ET-WEB-PT/players",
+        "https://fsa-puppy-bowl.herokuapp.com/api/2407-FTB-ET-WEB-PT/players",
         {
           method: "POST",
           headers: {
