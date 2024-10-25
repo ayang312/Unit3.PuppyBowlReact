@@ -42,11 +42,13 @@ export default function NewPlayerForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="name">Name: </label>
+      <label htmlFor="player-name">Name: </label>
       <input
         type="text"
         placeholder="name"
-        id="name"
+        autoComplete="name"
+        id="player-name"
+        name="name"
         value={name}
         onChange={(e) => setName(e.target.value)} // Update state on change
         required
@@ -54,11 +56,13 @@ export default function NewPlayerForm() {
 
       <br />
 
-      <label htmlFor="breed">Breed: </label>
+      <label htmlFor="player-breed">Breed: </label>
       <input
         type="text"
         placeholder="breed"
-        id="breed"
+        autoComplete="off"
+        id="player-breed"
+        name="breed"
         value={breed}
         onChange={(e) => setBreed(e.target.value)} // Update state on change
         required
